@@ -78,8 +78,8 @@ describe('Human', function() {
     comment out other "expect" statements and their following console statements, then
     uncomment the expect statement below and the secondary Human object above to test. */
 
-    // expect(testHuman.displayExpectancy(testHuman.mercuryLife)).toEqual(`you would be <span class="solarLife">12.71</span> solar years over the average lifespan`);
-    // console.log(testHuman.displayExpectancy(testHuman.mercuryLife) + " compare " + `you would be <span class="solarLife">12.71</span> solar years over the average lifespan`);
+    // expect(testHuman.displayExpectancy(testHuman.mercuryLife)).toEqual(`you would be <span class="solarLife">12.5</span> solar years over the average lifespan`);
+    // console.log(testHuman.displayExpectancy(testHuman.mercuryLife) + " compare " + `you would be <span class="solarLife">12.5</span> solar years over the average lifespan`);
 
   });
 
