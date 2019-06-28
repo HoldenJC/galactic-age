@@ -6,6 +6,7 @@ describe('Human', function() {
 
   beforeEach(function() {
     testHuman = new Human("Billy", 24);
+    // testHuman = new Human("Billy", 75); //Human object used to test output when age was over average lifespan
 
   });
 

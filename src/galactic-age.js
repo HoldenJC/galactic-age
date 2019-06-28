@@ -23,7 +23,6 @@ export class Human {
   }
 
   extraterrestrialExpectancy(){
-
     this.mercuryLife = (EarthLife * 0.24 - this.ageMercury).toFixed(2) * 1;
     this.venusLife = (EarthLife * 0.62 - this.ageVenus).toFixed(2) * 1;
     this.marsLife = (EarthLife * 1.88 - this.ageMars).toFixed(2) * 1;
