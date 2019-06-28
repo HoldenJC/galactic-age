@@ -1,8 +1,10 @@
+const EarthLife = 72; //global average lifespan via https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy
+
 export class Human {
+
   constructor(name, ageEarth){
     this.name = name;
     this.ageEarth = ageEarth;
-    this.earthLife = 72; //global average lifespan via https://en.wikipedia.org/wiki/List_of_countries_by_life_expectancy
     this.ageMercury = 0;
     this.mercuryLife = 0;
     this.ageVenus = 0;
@@ -21,9 +23,22 @@ export class Human {
   }
 
   extraterrestrialExpectancy(){
-    this.mercuryLife = (this.earthLife * 0.24 - this.ageMercury).toFixed(2) * 1;
-    this.venusLife = (this.earthLife * 0.62 - this.ageVenus).toFixed(2) * 1;
-    this.marsLife = (this.earthLife * 1.88 - this.ageMars).toFixed(2) * 1;
-    this.jupiterLife = (this.earthLife * 11.86 - this.ageJupiter).toFixed(2) * 1;
+
+    this.mercuryLife = (EarthLife * 0.24 - this.ageMercury).toFixed(2) * 1;
+    this.venusLife = (EarthLife * 0.62 - this.ageVenus).toFixed(2) * 1;
+    this.marsLife = (EarthLife * 1.88 - this.ageMars).toFixed(2) * 1;
+    this.jupiterLife = (EarthLife * 11.86 - this.ageJupiter).toFixed(2) * 1;
+  }
+
+  displayExpectancy(lifeRemaining){
+    let output;
+    if(lifeRemaining > 0){
+      output = `${lifeRemaining} years left to live`;
+      return output;
+    } else {
+      output = `${lifeRemaining * (-1)} years over the average`;
+      return output;
+    }
+
   }
 }

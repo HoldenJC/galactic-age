@@ -38,9 +38,6 @@ describe('Human', function() {
     testHuman.extraterrestrialAge();
     testHuman.extraterrestrialExpectancy();
 
-    expect(testHuman.earthLife).toEqual(72);
-    console.log(testHuman.earthLife + " compare " + 72);
-
     expect(testHuman.mercuryLife).toEqual(11.52);
     console.log(testHuman.mercuryLife + " compare " + 11.52);
 
@@ -52,6 +49,25 @@ describe('Human', function() {
 
     expect(testHuman.jupiterLife).toEqual(569.28);
     console.log(testHuman.jupiterLife + " compare " + 569.28);
+
+  });
+
+  it('should test that correct user output will be selected depending on if input age has already surpassed average life expectancy or if it has not', function() {
+
+    testHuman.extraterrestrialAge();
+    testHuman.extraterrestrialExpectancy();
+
+    expect(testHuman.displayExpectancy(testHuman.mercuryLife)).toEqual("11.52 years left to live");
+    console.log(testHuman.displayExpectancy(testHuman.mercuryLife) + " compare " + "11.52 years left to live");
+
+    expect(testHuman.displayExpectancy(testHuman.venusLife)).toEqual("29.76 years left to live");
+    console.log(testHuman.displayExpectancy(testHuman.venusLife) + " compare " + "29.76 years left to live");
+
+    expect(testHuman.displayExpectancy(testHuman.marsLife)).toEqual("90.24 years left to live");
+    console.log(testHuman.displayExpectancy(testHuman.marsLife) + " compare " + "90.24 years left to live");
+
+    expect(testHuman.displayExpectancy(testHuman.jupiterLife)).toEqual("569.28 years left to live");
+    console.log(testHuman.displayExpectancy(testHuman.jupiterLife) + " compare " + "569.28 years left to live");
 
   });
 
