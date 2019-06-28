@@ -2,7 +2,7 @@ import { Human } from './../src/galactic-age.js';
 
 describe('Human', function() {
 
-  var testHuman;
+  let testHuman;
 
   beforeEach(function() {
     testHuman = new Human("Billy", 24);
