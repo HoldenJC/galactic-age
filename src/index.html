@@ -5,17 +5,29 @@
 </head>
 <body>
   <div class="container">
-    <form id="userBirth">
 
-      <input id="name" type="text" placeholder="Enter your name" class="form-control">
-      
-      <div class="form-group">
-        <label for="birthday">Date of birth:</label>
-        <input id="birthday" class="form-control" type="date">
-      </div>
+    <div class="jumbotron">
+      <h1 class="display-2">Galactic Age Calculator</h1>
+    </div>
 
-      <button type="submit" name="button">Submit</button>
-    </form>
+    <div class="card p-5">
+      <form id="userBirth">
+
+        <label for="name">Enter your name:</label>
+        <input id="name" type="text" placeholder="(name here)" class="form-control">
+
+        <div class="form-group">
+          <label for="birthday">Date of birth:</label>
+          <input id="birthday" class="form-control" type="date">
+        </div>
+
+        <button type="submit" name="button" class="btn btn-primary">Calculate Solar Ages</button>
+      </form>
+
+      <div id="results"></div>
+      <div id="endMessage"></div>
+
+    </div>
   </div>
 
 </body>

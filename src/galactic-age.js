@@ -16,26 +16,26 @@ export class Human {
   }
 
   extraterrestrialAge(){
-    this.ageMercury = ((this.ageEarth * 0.24).toFixed(2)) * 1;
-    this.ageVenus = ((this.ageEarth * 0.62).toFixed(2)) * 1;
-    this.ageMars = ((this.ageEarth * 1.88).toFixed(2)) * 1;
-    this.ageJupiter = ((this.ageEarth * 11.86).toFixed(2)) * 1;
+    this.ageMercury = ((this.ageEarth / 0.24).toFixed(2)) * 1;
+    this.ageVenus = ((this.ageEarth / 0.62).toFixed(2)) * 1;
+    this.ageMars = ((this.ageEarth / 1.88).toFixed(2)) * 1;
+    this.ageJupiter = ((this.ageEarth / 11.86).toFixed(2)) * 1;
   }
 
   extraterrestrialExpectancy(){
-    this.mercuryLife = (EarthLife * 0.24 - this.ageMercury).toFixed(2) * 1;
-    this.venusLife = (EarthLife * 0.62 - this.ageVenus).toFixed(2) * 1;
-    this.marsLife = (EarthLife * 1.88 - this.ageMars).toFixed(2) * 1;
-    this.jupiterLife = (EarthLife * 11.86 - this.ageJupiter).toFixed(2) * 1;
+    this.mercuryLife = (EarthLife / 0.24 - this.ageMercury).toFixed(2) * 1;
+    this.venusLife = (EarthLife / 0.62 - this.ageVenus).toFixed(2) * 1;
+    this.marsLife = (EarthLife / 1.88 - this.ageMars).toFixed(2) * 1;
+    this.jupiterLife = (EarthLife / 11.86 - this.ageJupiter).toFixed(2) * 1;
   }
 
   displayExpectancy(lifeRemaining){
     let output;
     if(lifeRemaining > 0){
-      output = `${lifeRemaining} years left to live`;
+      output = `you'd have roughly <span class="solarLife">${lifeRemaining}</span> solar years left to live`;
       return output;
     } else {
-      output = `${lifeRemaining * (-1)} years over the average lifespan`;
+      output = `you would be <span class="solarLife">${lifeRemaining * (-1)}</span> solar years over the average lifespan`;
       return output;
     }
 
