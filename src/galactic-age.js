@@ -36,7 +36,7 @@ export class Human {
       output = `${lifeRemaining} years left to live`;
       return output;
     } else {
-      output = `${lifeRemaining * (-1)} years over the average`;
+      output = `${lifeRemaining * (-1)} years over the average lifespan`;
       return output;
     }
 
