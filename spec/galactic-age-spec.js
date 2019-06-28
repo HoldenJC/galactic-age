@@ -33,4 +33,26 @@ describe('Human', function() {
 
   });
 
+  it('should test that extraterrestrial life expectancies are being calculated and stored correctly', function() {
+
+    testHuman.extraterrestrialAge();
+    testHuman.extraterrestrialExpectancy();
+
+    expect(testHuman.earthLife).toEqual(72);
+    console.log(testHuman.earthLife + " compare " + 72);
+
+    expect(testHuman.mercuryLife).toEqual(11.52);
+    console.log(testHuman.mercuryLife + " compare " + 11.52);
+
+    expect(testHuman.venusLife).toEqual(29.76);
+    console.log(testHuman.venusLife + " compare " + 29.76);
+
+    expect(testHuman.marsLife).toEqual(90.24);
+    console.log(testHuman.marsLife + " compare " + 90.24);
+
+    expect(testHuman.jupiterLife).toEqual(569.28);
+    console.log(testHuman.jupiterLife + " compare " + 569.28);
+
+  });
+
 });
