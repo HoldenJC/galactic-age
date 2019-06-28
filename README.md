@@ -52,4 +52,4 @@ Copyright (c) 2019 **_Holden Clark_**
 
 This website is licensed under the MIT license.
 
-[Link to this project's gh-pages on GitHub](https://holdenjc.github.io/Galactic-Age/)
+[Link to this project's repository on GitHub](https://github.com/HoldenJC/galactic-age)
