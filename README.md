@@ -21,7 +21,7 @@ A website created with JS and HTML that allows the user to enter their age in Ea
 ## Setup/Installation Requirements
 
 * _Clone this repository_
-* _Open terminal / bash_
+* _Open bash / terminal_
 * _Navigate to the root directory of the cloned repository_
 * _Type "npm i" into bash / terminal_
 * _Type "npm run build" into terminal / bash (still in root directory)_
